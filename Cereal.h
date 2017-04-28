@@ -9,32 +9,36 @@
 class Cereal {
 
 private:
+    //Variables
     string brand;
     int upc;
     int month, day, year;
 
+
 public:
     //Constructors
     Cereal();
-    Cereal(string upc, int month, int day, int year);
+    Cereal(string brandIn, int upcIn, int monthIn, int dayIn, int yearIn);
     //Accessor
-    string getBrand();
-    int getUpc();
-    int getMonth();
-    int getDay();
-    int getYear();
-    //Setters
-    string setBrand();
-    int setUpc();
-    int setMonth();
-    int setDay();
-    int setYear();
-    //Overloaded Input Operators
+    string getBrand() const;
+    int getUpc() const;
+    int getMonth() const;
+    int getDay() const;
+    int getYear() const;
+    int getFunctionalDate() const;
+    //Setters/Mutators
+    void setBrand(string brandIn);
+    void setUpc(int upcIn);
+    void setMonth(int monthIn);
+    void setDay(int dayIn);
+    void setYear(int yearIn);
+    //Overloaded Stream Operators
     friend ostream& operator <<(ostream& outputStream, const Cereal& info);
     friend istream& operator >>(istream& inputStream, Cereal& info);
     //Override Comparison Operators
-    bool operator<(const Cereal& cer2);
-    bool operator>(const Ceral& cer2);
+    bool operator<(const Cereal& cer2) const;
+    bool operator>(const Cereal& cer2) const;
+
 
 };
 

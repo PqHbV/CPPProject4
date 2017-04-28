@@ -125,13 +125,16 @@ int main() {
                 }
                 break;
             case 5:
+                string fileOutName;
+                cout<<"Please enter the name of the file to save as: "<<endl;
+                cin>>fileOutName;
                 loop = false;
                 spot = cerList.begin();
                 if(cerList.empty()){
                     cout<<"List is empty, nothing to save."<<endl;
                 }else{
                         ofstream fout;
-                        fout.open("test.txt");
+                        fout.open(fileOutName);
 
                         for(int i = 0; i < cerList.size(); i++){
                             if(i > 0){

@@ -1,6 +1,6 @@
-//
+// Cereal.h
 // Created by Ryan Taylor on 4/25/17.
-//
+// Header for Cereal class
 
 #ifndef PROJECT4_CEREAL_H
 #define PROJECT4_CEREAL_H

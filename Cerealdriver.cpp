@@ -1,3 +1,7 @@
+// Cerealdriver.cpp
+// Created by Ryan Taylor
+// This prgram test the Cereal class which reads in a list of cereal boxes from a text file and
+// allows you to add, remove and print Cereal box object. At the end it will exit and save to a new file.
 
 #include<iostream> // for cout
 #include <fstream>	//ifstream
@@ -13,8 +17,6 @@ list<Cereal> cerList;
 list<Cereal>::iterator spot;
 list<Cereal>::iterator endL;
 list<Cereal>::iterator tempElement;
-
-
 
 
 int main() {
